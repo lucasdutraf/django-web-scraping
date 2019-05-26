@@ -25,7 +25,7 @@ def get_all_image_links():
 def get_all_products_price():
     page_content = get_page_content()
     products_price = []
-    products_price_elements = page_content.find_all("price")
+    products_price_elements = page_content.find_all(class_="price")
     for price in products_price_elements:
         products_price.append(price.get_text())
     return products_price
