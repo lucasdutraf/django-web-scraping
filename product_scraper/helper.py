@@ -21,3 +21,10 @@ def get_all_image_links():
     for link in image_tag_elements:
         image_links.append(link.get("src"))
     return image_links
+
+def get_all_products_price():
+    page_content = get_page_content()
+    products_price = []
+    products_price_elements = page_content.find_all("price")
+    for price in products_price_elements:
+        products_price.append(price.get_text())
