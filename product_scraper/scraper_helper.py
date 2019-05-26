@@ -28,3 +28,4 @@ def get_all_products_price():
     products_price_elements = page_content.find_all("price")
     for price in products_price_elements:
         products_price.append(price.get_text())
+    return products_price
