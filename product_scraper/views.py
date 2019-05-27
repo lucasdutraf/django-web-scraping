@@ -6,6 +6,9 @@ from .models import Product
 
 class ProductsList(generics.ListAPIView):
     queryset = Product.objects.all()
+    if not queryset:
+        populate_product_db()
+        queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
 class ProductId(generics.RetrieveAPIView):
