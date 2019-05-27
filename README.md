@@ -7,14 +7,14 @@
 * virtualenv
 
 ## Como executar o projeto?
-O primeiro passo é criar um ambiente virtual que utilize python3 atráves do seguinte comando<br/>
-``` $ virtualenv -p python3 venv ```
-Após esse passo bem-sucedido é necessário acessar o ambiente virtual criado<br/>
-``` $ source venv/bin/activate ```
-Agora finalmente para executar o projeto basta executar o script<br/>
-``` $ sh ./run.sh ```
-O projeto estará disponível para acesso pelo browser ou ferramenta de requisições no seguinte endereço<br/>
-``` http://localhost:8800/products```
+O primeiro passo é criar um ambiente virtual que utilize python3 atráves do seguinte comando  
+``` $ virtualenv -p python3 venv ```  
+Após esse passo bem-sucedido é necessário acessar o ambiente virtual criado  
+``` $ source venv/bin/activate ```  
+Agora finalmente para executar o projeto basta executar o script  
+``` $ sh ./run.sh ```  
+O projeto estará disponível para acesso pelo browser ou ferramenta de requisições no seguinte endereço  
+``` http://localhost:8800/products```  
 
 
 ## Como testar o projeto?
