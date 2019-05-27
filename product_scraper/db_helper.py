@@ -11,10 +11,6 @@ def populate_product_db():
     for elements in range(len(names)):
         id = elements
         name = names[elements]
-        if len(prices[elements]) > 1:
-            multiple_prices = prices[elements].find_all('span')
-            price = "De " + str(multiple_prices[0]) + " por " + str(multiple_prices[2])
-        else:
-            price = prices[elements]
+        price = prices[elements]
         image_link = image_links[elements]
         add_product(id, name, price, image_link)
