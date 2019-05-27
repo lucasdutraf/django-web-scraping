@@ -9,7 +9,7 @@ def populate_product_db():
     prices = get_all_products_price()
     image_links = get_all_image_links()
     for elements in range(len(names)):
-        id = elements
+        id = elements + 1
         name = names[elements]
         price = prices[elements]
         image_link = image_links[elements]
