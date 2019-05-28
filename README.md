@@ -30,7 +30,8 @@ As urls disponíveis para uso são _/products_ e _/product/id_, onde o id corres
 * bs4 - BeautifulSoup
   
 ## Quais os padrões adotados para o desenvolvimento?
-Decidi desacoplar o código o máximo que pude, assim, criando arquivos e funções indepentes para executar as diferentes necessidades para funcionamento da aplicação. A lógica para execução do _Web Scraping_ se encontra no arquivo [/product_scraper/scraper_helper.py](https://github.com/lucasdutraf/django-web-scraping/blob/devel/product_scraper/scraper_helper.py), já a comunicação com o banco de dados está em [/product_scraper/db_helper.py](https://github.com/lucasdutraf/django-web-scraping/blob/devel/product_scraper/db_helper.py). Deste modo, as views tem total independência, sendo responsáveis somente por se comunicar com o banco de dados para retornar em formato _JSON_ os dados.
+Decidi desacoplar o código o máximo que pude, assim, criando arquivos e funções indepentes para executar as diferentes necessidades para funcionamento da aplicação. A lógica para execução do _Web Scraping_ se encontra no arquivo [/product_scraper/scraper_helper.py](https://github.com/lucasdutraf/django-web-scraping/blob/devel/product_scraper/scraper_helper.py), já a comunicação com o banco de dados está em [/product_scraper/db_helper.py](https://github.com/lucasdutraf/django-web-scraping/blob/devel/product_scraper/db_helper.py). Deste modo, as views tem total independência, sendo responsáveis somente por se comunicar com o banco de dados para retornar em formato _JSON_ os dados.  
+Além disso, utilizei as branches do git, subindo para a master apenas código estável e funcional e mantendo o desenvolvimento constante na branch devel.  
 
 ## Banco de dados utilizado
 * SQLite3
