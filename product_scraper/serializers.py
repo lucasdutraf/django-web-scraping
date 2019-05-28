@@ -1,13 +1,13 @@
 from rest_framework import serializers
-from product_scraper.models import Product
+from product_scraper.models import Item
 
-class ProductSerializer(serializers.ModelSerializer):
+class ItemSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Product
+        model = Item
         fields = ('id', 'name', 'price', 'image_link')
 
     def create(self, validated_data):
-        return Product.objects.create(**validated_data)
+        return Item.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
         instance.id = validated_data.get('id', instance.id)

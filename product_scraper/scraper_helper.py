@@ -3,11 +3,8 @@ from bs4 import BeautifulSoup
 from django.http import HttpResponse, HttpResponseBadRequest
 
 def get_page_content():
-    try:
-        page = requests.get("https://nerdstore.com.br/categoria/especiais/game-of-thrones/")
-        page_content = BeautifulSoup(page.content, "html.parser")
-    except page.DoesNotExist:
-        return HttpResponse(status=400)
+    page = requests.get("https://nerdstore.com.br/categoria/especiais/game-of-thrones/")
+    page_content = BeautifulSoup(page.content, "html.parser")
     return page_content
 
 def get_all_product_name():

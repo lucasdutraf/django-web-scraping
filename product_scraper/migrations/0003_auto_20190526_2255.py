@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterField(
-            model_name='product',
+            model_name='Product',
             name='price',
             field=models.CharField(max_length=50),
         ),
