@@ -17,6 +17,11 @@ O projeto estará disponível para acesso pelo browser ou ferramenta de requisi�
 ``` http://localhost:8800/products```  
 
 
+## Problemas encontrados
+Nas últimas horas antes da entrega me deparei com um erro de migrations, quando era utilizada a abordagem de banco de dados que não consegui reverter de maneira alguma. Após algumas pesquisas, percebi que podia ser um erro devido a versão do sqlite3 e que não haviam muitas respostas para o tal erro.  
+Assim, tomei a decisão de implementar a view somente fazendo o que era pedido, o Web Scraping e retornando o conteúdo da página, sem demais perfumarias. O código ficou bem curto e não muito bem estruturado, mas foi o que eu pude recorrer nos últimos instantes.  
+Para funcionamento da versão com models implentadas, basta trocar o nome da model e e o mesmo em todas as referências e rodar o script novamente. Esta versão se encontra aqui.  
+
 ## Como testar o projeto?
 As urls disponíveis para uso são _/products_ e _/product/id_, onde o id corresponde ao número único atribuído a cada item da página.
 
